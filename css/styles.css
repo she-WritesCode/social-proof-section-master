@@ -2,6 +2,7 @@
 
 body {
 	font-family: "Spartan", sans-serif;
+	color: theme("colors.red");
 }
 
 @tailwind components;

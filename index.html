@@ -22,6 +22,21 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
+
+    .card-container {
+      top: -30px;
+      left: 50%;
+      margin-left: calc(-75%/2);
+    }
+
+    .full-width {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+    }
   </style>
   <link rel="stylesheet" href="css/compiled.css">
 </head>
@@ -31,9 +46,9 @@
   <img class="block lg:hidden w-full  absolute bottom-0 right-0" src="images/bg-pattern-bottom-mobile.svg" alt="">
   <img class="hidden lg:block max-w-full  absolute top-0 left-0" src="images/bg-pattern-top-desktop.svg" alt="">
   <img class="hidden lg:block max-w-full  absolute bottom-0 right-0" src="images/bg-pattern-bottom-desktop.svg" alt="">
-  <div class="px-8 py-16 lg:max-w-screen-lg lg:max-w-screen-lg mx-auto">
+  <div class="py-16 px-8 lg:items-center lg:max-w-screen-lg lg:max-w-screen-lg mx-auto">
 
-    <div class="grid lg:grid-cols-5 lg:gap-16 mb-16 lg:items-center">
+    <div class="grid lg:grid-cols-5 lg:gap-16 mb-16 ">
 
       <div class="text-center lg:text-left mb-8 lg:mb-0 lg:col-span-2">
         <h1 class="text-magenta text-4xl lg:text-4xl font-extrabold mb-6">10,000+ of our users love our products. </h1>
@@ -80,6 +95,18 @@
       </div>
 
     </div>
+    <div class="bg-magenta h-48 relative">
+      <div class="w-9/12 absolute grid grid-cols-2 card-container">
+        <div class="card bg-yellow-500 h-20 w-full">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia similique maxime nihil corporis pariatur ex
+          quaerat praesentium cumque fuga laborum, enim quisquam vel sapiente nemo qui aspernatur beatae quam at.
+        </div>
+        <div class="card bg-yellow-500 h-20 w-full"></div>
+      </div>
+      <div>
+
+      </div>
+    </div>
     <div class="grid lg:grid-cols-3 gap-4 lg:gap-8">
       <div class="bg-magenta rounded-lg text-white p-8 lg:mb-8">
         <div class="flex gap-6 items-center mb-8">
@@ -96,6 +123,7 @@
         </p>
       </div>
       <div class="bg-magenta rounded-lg text-white p-8 lg:mt-4 lg:mb-4">
+        <img class="rounded-full w-10 h-10 -mt-12 mb-10 mx-auto" src="images/image-anne.jpg" alt="">
         <div class="flex gap-6 items-center mb-8">
           <img class="rounded-full w-10 h-10" src="images/image-anne.jpg" alt="">
           <div class="">
